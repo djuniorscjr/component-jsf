@@ -1,5 +1,5 @@
 # Create Component for JSF project
-Why? For organize and refactor the code. Here have created two component, grid and row. See index.xhtml
+Why? Help with divs nested, organize and refactor the code. Here have created two component, grid and row. See index.xhtml
 
 ### Grid
 Where? (src/main/webapp/resources/x/grid.xhtml
