@@ -10,4 +10,4 @@ Where? (src/main/webapp/resources/x/row.xhtml
 Here we use composite the jsf and for manipulate child component we create RowComponent(src/main/java/br/com/component/RowComponent.java). See!
 
 ## RESULT. SEE!
-![](image.png)))
+![](image.png)
