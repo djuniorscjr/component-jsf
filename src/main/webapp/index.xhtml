@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:x="http://java.sun.com/jsf/composite/x">
+
+<h:head>
+	<title>Component Grid and Row</title>
+</h:head>
+<h:body>
+	<h2>Using Primefaces Grid CSS</h2>
+	<div class="ui-fluid">
+		<div class="ui-g">
+			<div class="ui-g-2">
+				<p:outputLabel for="input" value="Input" />
+			</div>
+			<div class="ui-g-10">
+				<p:inputText id="input" />
+			</div>
+			<div class="ui-g-2">
+				<p:outputLabel for="area" value="Textarea" />
+			</div>
+			<div class="ui-g-10">
+				<p:inputTextarea id="area" />
+			</div>
+		</div>
+	</div>
+	<div class="ui-g">
+		<div class="ui-g-12 ui-md-6 ui-lg-12" align="center">
+			<p:commandButton value="Save" icon="ui-icon-extlink" type="button" />
+		</div>
+	</div>
+	<h2>Using Grid and Row custom</h2>
+	<x:grid>
+		<x:row columns="ui-g-2, ui-g-10">
+			<p:outputLabel for="input" value="Input" />
+			<p:inputText id="input" />
+		</x:row>
+		<x:row columns="ui-g-2, ui-g-10">
+			<p:outputLabel for="area" value="Textarea" />
+			<p:inputTextarea id="area" />
+		</x:row>
+	</x:grid>
+	<x:grid firstClass="ui-g" secondClass="ui-g-12 ui-md-6 ui-lg-12"
+		align="center">
+		<p:commandButton value="Save" icon="ui-icon-extlink" type="button" />
+	</x:grid>
+</h:body>
+</html>
